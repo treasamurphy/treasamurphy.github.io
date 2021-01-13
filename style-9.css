@@ -76,6 +76,7 @@ img { margin-bottom: 20px }
     font-size: 18px; /* Overrules p font-size valueoutside panel box. */
     line-height: 1.5; /* Overrules p line-height value outside panel box. */
     margin-bottom: 0; /* Overrules p margin-bottom value outside panel box. */
+    }
 
     /* === Four different panel box styles === */
 
@@ -87,7 +88,7 @@ img { margin-bottom: 20px }
     box-shadow: 8px 10px 8px #888;
  }
  
- .important-note-box.box-style-1 h3 { color: #1FA441 }
+ .important-note-box.box-style-1 h3 { color: #1FA441 
 }
 
 /* Panel box style 2 */
