@@ -1,0 +1,37 @@
+
+/* =============== FONT =============== */
+
+body { 	font-family: 'Neucha', sans-serif }
+
+
+/* Section block background colors */
+.bg-watermelon { background-color: #FBBDD9 }
+.bg-apple      { background-color: #B7F3D9 }
+.bg-blueberry  { background-color: #8C6BBE }
+.bg-lemon      { background-color: #F1F1BC }
+
+/* ============== INTRODUCTION TEXT ============ */
+
+h2 {
+	font-size: calc(26px + (54 - 26) * ((100vw - 320px) / (1600 - 320))); 
+	color: #733fc0;
+	text-align: center;  
+	line-height: 1.6;  
+}
+
+.bg-blueberry h3,
+.bg-blueberry {color: #fff}
+
+
+
+/* ======= CONTENT INSIDE  COLUMNS ======= */
+
+/* Sub-headings  */
+h3 {
+	font-size: 36px;
+}
+
+/* Text paragraphs */
+p { 
+	font-size: 24px;
+}
