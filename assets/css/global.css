@@ -7,22 +7,27 @@
 5: Hero blocks with background video
 6: Introduction text block
 7: Contact form
-*/
+*/ 
+
+/* Background colour */
+
+body{background-color: #f4f5db ;}
+
 
 
 /* =========== 1: WEBSITE TYPOGRAPHY ============= */
 
 /* Main headings */
-h1 { font-family: sans-serif }
+h1 { font-family: 'Playfair Display', serif; color: #184d47 }
 
 /* Sub-headings */
-h2 { font-family: sans-serif }
+h2 { font-family: 'Playfair Display', serif; color: #184d47 }
 
 /* Smaller sub-headings */
-h3, h4, h5, h6 { font-family: sans-serif }
+h3, h4, h5, h6 { font-family: sans-serif; color: #184d47 }
 
 /* Text */
-p, li { font-family: sans-serif }
+p, li { font-family: 'Lato', serif; color: #184d47 }
 
 /* Menus */
 #mainNav .container ul.navbar-nav li a.nav-link,
@@ -40,7 +45,7 @@ footer a.privacy-legal { font-family: sans-serif }
 #mainNav .container img { margin-bottom: 0 }
 
 /* Menu: dark colour */
-nav.navbar.navbar-dark.bg-dark { background-color: darkblue !important }
+nav.navbar.navbar-dark.bg-dark { background-color: darkolivegreen !important }
 
 /* Menu: light colour */
 nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
@@ -102,7 +107,7 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 }
 
 /* Center-align headings and sub-headings */
-.hero-block h1, .hero-block h2 { text-align: center }
+.hero-block h1, .hero-block h2 { text-align: center; font-family: 'Playfair Display', serif; }
 
 /* Set maximum width of heading snd sub-heading */
 .hero-block h1, .hero-block h2 { 
@@ -245,7 +250,7 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 footer { 
     text-align: center; 
     color:#fff;
-    background-color:rgb(36,64,84);
+    background-color:darkolivegreen;
 }
 
 /* Desktop footer - inside padding  */
@@ -272,7 +277,7 @@ footer h4 {
 footer h5 {
     font-weight: normal;
     font-style:  italic;
-    color: #fff;
+    color: #184d47ff;
     margin: 0 auto 36px auto;
     font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
 }

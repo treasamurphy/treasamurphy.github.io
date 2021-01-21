@@ -18,8 +18,18 @@
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/global.css">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">   
+
     <!-- Link to icons for Font Awesome 5 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+       <!-- Insites CSS for popup privacy message -->
+
+       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     
 </head>
 
@@ -49,7 +59,7 @@
   
                     <!-- Call to action button-->
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="contact/" role="button">
+                        <a class="btn btn-darkseagreen btn-dark" href="contact/" role="button">
                             <i class="far fa-envelope"></i> &nbsp;&nbsp;Contact
                         </a>
                     </li>
@@ -63,11 +73,10 @@
     
         <!-- Background video --->
         <video loop muted autoplay poster="assets/videos/hero-video-poster.jpg" class="background-video">
-                <source src="assets/videos/home-video.mp4" type="video/mp4">
+                <source src="assets/videos/laptop.mp4" type="video/mp4">
         </video>
     
-        <!-- Optional overlay --->
-        <div class="bg-overlay"></div>
+      
 
         <!-- Hero block content --->
         <div class="background-video-content">
@@ -77,10 +86,10 @@
             <!-- Buttons start here -->
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <a class="btn btn-primary btn-lg" href="portfolio/" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
+                    <a class="btn btn-darkseagreen btn-dark" href="portfolio/" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
                 </div>	
                 <div class="col-md-6 col-xs-12">
-                    <a class="btn btn-primary btn-lg" href="contact/" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
+                    <a class="btn btn-darkseagreen btn-dark" href="contact/" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
                 </div>	
             </div>
             <!-- Buttons end here -->            
@@ -116,14 +125,9 @@
                 </a>
             </li>
 
-            <li>
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </li>
 
             <li>
-                <a href="#">
+                <a href="https://treasamurphy.github.io/">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
@@ -152,6 +156,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#f1d600"
+        }
+      },
+      "content": {
+        "href": "https://treasamurphy.github.io/privacy.html"
+      }
+    });
+    </script>
 
 </body>
 </html>
