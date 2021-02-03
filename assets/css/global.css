@@ -18,24 +18,24 @@ body{background-color: #f4f5db ;}
 /* =========== 1: WEBSITE TYPOGRAPHY ============= */
 
 /* Main headings */
-h1 { font-family: 'Playfair Display', serif; color: #184d47 }
+h1 { font-family: 'Cutive Mono', serif; color: #023104 }
 
 /* Sub-headings */
-h2 { font-family: 'Playfair Display', serif; color: #184d47 }
+h2 { font-family: 'Cutive Mono', serif; color: #023104 }
 
 /* Smaller sub-headings */
-h3, h4, h5, h6 { font-family: sans-serif; color: #184d47 }
+h3, h4, h5, h6 { font-family: 'Cutive Mono'; color: #184d47}
 
 /* Text */
-p, li { font-family: 'Lato', serif; color: #184d47 }
+p, li { font-family: 'Cutive Mono', serif; color: #184d47 }
 
 /* Menus */
 #mainNav .container ul.navbar-nav li a.nav-link,
-#mainNav li.nav-item a.btn { font-family: sans-serif }
+#mainNav li.nav-item a.btn { font-family: 'Cutive Mono' }
 
 /* Footer */
 footer ul.footer-links li a,
-footer a.privacy-legal { font-family: sans-serif }
+footer a.privacy-legal { font-family: 'Cutive Mono' }
 
 
 /* =========== 2: BOOTSTRAP MENUS ============= */
@@ -51,16 +51,16 @@ nav.navbar.navbar-dark.bg-dark { background-color: darkolivegreen !important }
 nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 
 /* Hamburger icon */
-#mainNav.navbar-dark.bg-dark i.fas.fa-bars { font-size: xx-large }
+#mainNav.navbar-dark.bg-dark i.fas.fa-bars { font-size: xx-large; font-family: 'Cutive Mono' }
 
 /* Hamburger icon: dark colour */ 
-#mainNav.navbar-dark.bg-dark i.fas.fa-bars { color: #fff }
+#mainNav.navbar-dark.bg-dark i.fas.fa-bars { color: #fff; font-family: 'Cutive Mono' }
 
 /* Hamburger icon: dark colour */
 #mainNav.navbar-light.bg-light i.fas.fa-bars { color: #000 }
 
 /* Menu options: text size and weight */
-#mainNav li.nav-item a { font-size: large; font-weight: bold }
+#mainNav li.nav-item a { font-size: large }
 
 /* Menu options: call-to-action button */
 #mainNav li.nav-item a.btn { padding: 6px 20px; font-weight: normal }
@@ -83,6 +83,7 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:active { color: lightgray }
 
+
 /* ============== 3: HERO BLOCKS GENERAL ============== */
 
 /* Verically center content and default background colour */
@@ -95,21 +96,23 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 
 /* Desktop - hero block inside spacing */
 @media (min-width:768px) {
-    .hero-block { padding: 8% 5% }
+    .hero-block { padding: 8% 5%; 
+                  font-family: 'Cutive Mono';
+                }
 }
 
 /* Mobiles - hero inside spacing */
  @media (max-width:767px) {
     .hero-block { margin-bottom: 40px; padding: 20% 10% }
     .col-md-6.col-xs-12.text-right,
-    .col-md-6.col-xs-12 { text-align: center !important }
-    .col-md-6.col-xs-12:nth-child(1) { margin-bottom: 12% }
+    .col-md-6.col-xs-12 { text-align: center !important; font-family: 'Cutive Mono'; }
+    .col-md-6.col-xs-12:nth-child(1) { margin-bottom: 20%; padding: 30% 15% }
 }
 
 /* Center-align headings and sub-headings */
-.hero-block h1, .hero-block h2 { text-align: center; font-family: 'Playfair Display', serif; }
+.hero-block h1, .hero-block h2 { text-align: center; font-family: 'Cutive Mono', serif; }
 
-/* Set maximum width of heading snd sub-heading */
+/* Set maximum width of heading and sub-heading */
 .hero-block h1, .hero-block h2 { 
     max-width: 80%; margin-left: auto; margin-right: auto
 }
@@ -348,7 +351,7 @@ footer p a:active  {
 }
 
 a.privacy-legal {
-    font-family: sans-serif;    
+    font-family: 'Cutive Mono';    
     display: inline-block;
     color:#fff;
     text-decoration: none;
