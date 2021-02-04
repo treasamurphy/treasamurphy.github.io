@@ -22,6 +22,9 @@
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="../assets/css/global.css">
 
+    <!-- JavaScript stylesheet -->
+    <link rel="stylesheet" href="../assets/css/javascript-page.css">   
+
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
@@ -63,9 +66,9 @@
         <div class="container">
 
              <!-- Website logo -->
-             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/treasa-logo3.png" width="200" height="40"  alt="Website logo">
-            </a>
+             <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/treasa-logo3.png" width="200" height="40"  alt="Website logo">
+             </a>
 
             <!-- Hamburger icon -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
@@ -82,7 +85,7 @@
   
                     <!-- Call to action button-->
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="../contact/" role="button">
+                        <a class="btn btn-darkseagreen btn-dark" href="../contact/" role="button">
                             <i class="far fa-envelope"></i> &nbsp;&nbsp;Contact
                         </a>
                     </li>
@@ -100,10 +103,10 @@
     <!-- Buttons start here -->
     <div class="row">
         <div class="col-md-6 col-xs-12 text-right">
-           <a class="btn btn-primary btn-lg" href="../portfolio" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
+           <a class="btn btn-darkseagreen btn-dark btn-lg" href="../portfolio" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
        </div>	
        <div class="col-md-6 col-xs-12">
-           <a class="btn btn-primary btn-lg" href="../contact" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
+           <a class="btn btn-darkseagreen btn-dark btn-lg" href="../contact" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
        </div>	
    </div>
    <!-- Buttons end here --> 
@@ -112,17 +115,76 @@
 
     <div class="container introduction-text">
 
-        <h1>To be completed</h1>
+        <h1>Some sample JavaScript</h1>
+        <p>Today, almost every one of the world’s 1.7 billion websites uses a programming language created in <a target="_blank" class="fancy-link" href="https://thenewstack.io/brendan-eich-on-creating-javascript-in-10-days-and-what-hed-do-differently-today/">ten days</a> back in 1995. Check out my fun JavaScript coding samples below.</p>   
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi maiores dignissimos perferendis nobis nihil hic dicta maxime, asperiores similique voluptas velit voluptatibus in dolore blanditiis minima qui exercitationem quod optio.</p>
-        
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ipsum odio veritatis sed culpa consequatur ducimus dolore nesciunt mollitia animi eaque nobis aperiam laborum unde, dolorum pariatur reiciendis consequuntur libero?</p>
     </div>
+
+    <div class="palegreen">
+        <div class="container col-md-8 offset-md-2">
+           <h3>To get started, please introduce yourself</h3>
+           <div class="row js-box">
+     
+              <div class="col-md-3">
+                 <p>Your first name:</p>
+              </div>
+     
+              <div class="col-md-5">
+                 <input type="text" id="fName">
+                 <div id="error-msg" class="hidden"><p><i class="fas fa-exclamation-triangle"></i>  At least two characters, please.</p></div>
+                 <div id="resultfName" class="hidden"></div>
+              </div>
+     
+              <div class="col-md-4">
+                <button onclick="checkInput()" class="btn btn-primary">Go  <i class="fas fa-arrow-circle-right"></i></button>     
+                <button onclick="resetUser()" class="btn btn-light">Reset  <i class="fas fa-minus-circle"></i></button>
+             </div>
+           </div>
+        </div>
+     
+        <div id="content-area" class="hidden">
+     
+           <div class="container col-md-8 offset-md-2">
+              <div class="row js-box" style="margin-top:0">
+                 <div class="col-md-9 offset-md-3" style="margin-bottom: 12px">
+                    <div id="userOutput"></div>
+                 </div>
+     
+                 <div class="col-md-9 offset-md-3">
+                    <div id="browserOutput"></div>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="container col-md-8 offset-md-2">
+               <h3>Show your location</h3>
+               <div class="row js-box" style="padding-bottom:40px">
+                  <div class="col-md-4">
+                     <p id="msgFoundYou"></p>
+                   </div>
+     
+                  <div class="col-md-8">
+                     <button id="btn-find-me" class="btn btn-primary">Where am I?  <i class="fas fa-question-circle"></i></button>
+                     <p id="allowPersmission">( Please allow location access when prompted.)</p>
+                     <p id = "positionStatus"></p>
+                     <p id = "lat"></p>
+                     <p id = "lng" style="margin-bottom:28px"></p>
+                     <p id="map-block"></p>
+                  </div>
+               </div>
+            </div>
+        </div>
+     </div>
+
+
+
 
     <!-- Begin footer-->
     <footer class="container-fluid">
 
-        <h4>Treasa Murphy: Web Designer</h4>
+        <h4><a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/treasa-logo3.png" width="200" height="40"  alt="Website logo">
+         </a></h4>
         <h5>Excellence in digital creation</h5>
 
         <ul class="footer-links">
@@ -139,14 +201,9 @@
                 </a>
             </li>
 
-            <li>
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </li>
 
             <li>
-                <a href="#">
+                <a href="https://treasamurphy.github.io">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
@@ -194,6 +251,11 @@
       }
     });
     </script>
+
+    <!-- JavaScript for this page -->
+    <script src="../assets/js/scripts.js"></script>  
+
+    <script src="https://cdn.rawgit.com/bestiejs/platform.js/master/platform.js"></script>  
 
 </body>
 </html>
