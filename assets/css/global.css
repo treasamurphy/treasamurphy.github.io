@@ -133,6 +133,7 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 
 /* Centre background image, horizontally and vertically */
 .hero-7 {
+    background-image: url('../assets/img/macbook.jpeg') ;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
